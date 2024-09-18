@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1e1e1e;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+.input-column,
+.output-column {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 10px;
+}
+
+.center-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+textarea {
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+    padding: 15px;
+    font-size: 16px;
+    background-color: #2b2b2b;
+    color: #ffffff;
+    border: 1px solid #555;
+    border-radius: 8px;
+    resize: none;
+    transition: border-color 0.3s ease;
+}
+
+textarea:focus {
+    border-color: #4caf50;
+    outline: none;
+}
+
+
+/* //////// BUTTONS /////////// */
+
+button {
+    font-size: 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.2s ease;
+    outline: none;
+}
+
+#convertButton {
+    width: 100px;
+    height: 100px;
+    background-color: #4caf50;
+    color: #ffffff;
+    border: 3px solid #2e7430; 
+    border-radius: 12px;
+}
+
+#convertButton:hover {
+    background-color: #53c057;
+    border: 3px solid #225724; 
+    transform: scale(1.15);
+}
+
+#convertButton:active {
+    transform: scale(0.95);
+}
+
+#copyButton {
+    margin-top: 20px;
+    background-color: #1e88e5;
+    color: #ffffff;
+    border: 3px solid #1969af;
+    padding: 12px 25px;
+    border-radius: 6px;
+    transition: transform 0.2s ease;
+}
+
+#copyButton:hover {
+    background-color: #2496fa;
+    border: 3px solid #124e83;
+    transform: scale(1.05);
+}
+
+#copyButton:active {
+    transform: scale(0.95);
+}
+
+@media (max-width: 800px) {
+    #convertButton {
+        color: transparent;
+        width: 50px;
+        height: 50px;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 5px;
+    }
+}
+
+@media (max-height: 400px) {
+    #copyButton {
+        color: transparent;
+        width: 100%;
+        height: 50px;
+    }
+}
