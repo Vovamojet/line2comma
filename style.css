@@ -87,8 +87,11 @@ button {
     transform: scale(0.95);
 }
 
-#copyButton {
-    margin-top: 20px;
+/* ////// COPY BUTTON ///////// */
+
+
+.btm-btn {
+    margin-top: 10px;
     background-color: #1e88e5;
     color: #ffffff;
     border: 3px solid #1969af;
@@ -97,13 +100,13 @@ button {
     transition: transform 0.2s ease;
 }
 
-#copyButton:hover {
+.btm-btn:hover {
     background-color: #2496fa;
     border: 3px solid #124e83;
     transform: scale(1.05);
 }
 
-#copyButton:active {
+.btm-btn:active {
     transform: scale(0.95);
 }
 
@@ -123,9 +126,10 @@ button {
 }
 
 @media (max-height: 400px) {
-    #copyButton {
-        color: transparent;
-        width: 100%;
-        height: 50px;
+    .btm-btn {
+    margin-top: 3px;
+    padding: 0px 25px;
+    font-size: 10px;
+    height: 30px;
     }
 }
